@@ -1,0 +1,37 @@
+.fondo {
+    background-color: #344258;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.titulo {
+    background-color: #f74464;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contenedor {
+    background-color: #6a7285;
+    margin: 20px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.cajas {
+    background-color: #f3f3f3;
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+/* Hasta esta parte se encuentra la configuración del estilo de por defecto. A continuación sigue el estilo más estrecho */
+
+@media screen and (min-width:150px) and (max-width:800px) {
+    .contenedor {
+        flex-direction: column;
+    }
+}
